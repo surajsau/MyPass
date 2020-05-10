@@ -8,6 +8,7 @@ ICON_FILE="applet.icns"
 APP_NAME="MyPass"
 
 mkdir -p $OUTPUT_LOCATION
+rm -rf $OUTPUT_LOCATION/*
 
 osacompile -o "$OUTPUT_LOCATION/$APP_NAME.app" "$SCRIPT_LOCATION/$SCRIPT_FILE"
 
