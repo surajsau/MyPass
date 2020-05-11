@@ -2,7 +2,7 @@
 
 SCRIPT_LOCATION="./script"
 OUTPUT_LOCATION="./build"
-SCRIPT_FILE="password.scpt"
+SCRIPT_FILE="sample.scpt"
 ICON_FILE="applet.icns"
 
 APP_NAME="MyPass"
