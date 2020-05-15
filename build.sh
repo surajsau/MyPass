@@ -16,4 +16,7 @@ cp -R $SCRIPT_LOCATION/$APP_NAME.app/* "$OUTPUT_LOCATION/$APP_NAME.app/"
 rm "$OUTPUT_LOCATION/$APP_NAME.app/Contents/Resources/applet.icns"
 cp "$SCRIPT_LOCATION/$ICON_FILE" "$OUTPUT_LOCATION/$APP_NAME.app/Contents/Resources/applet.icns"
 
-echo "Build: $OUTPUT_LOCATION/APP_NAME.app"
+echo "Build: $OUTPUT_LOCATION/$APP_NAME.app"
+
+mv "$OUTPUT_LOCATION/$APP_NAME.app" "/Applications/"
+echo "Moved to Applications"
