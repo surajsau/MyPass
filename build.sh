@@ -2,15 +2,16 @@
 
 SCRIPT_LOCATION="./script"
 OUTPUT_LOCATION="./build"
-SCRIPT_FILE="sample.scpt"
+APP_NAME="MyPass"
 ICON_FILE="applet.icns"
 
 APP_NAME="MyPass"
 
 mkdir -p $OUTPUT_LOCATION
 rm -rf $OUTPUT_LOCATION/*
+mkdir -p $OUTPUT_LOCATION/$APP_NAME.app
 
-osacompile -o "$OUTPUT_LOCATION/$APP_NAME.app" "$SCRIPT_LOCATION/$SCRIPT_FILE"
+cp -R $SCRIPT_LOCATION/$APP_NAME.app/* "$OUTPUT_LOCATION/$APP_NAME.app/"
 
 rm "$OUTPUT_LOCATION/$APP_NAME.app/Contents/Resources/applet.icns"
 cp "$SCRIPT_LOCATION/$ICON_FILE" "$OUTPUT_LOCATION/$APP_NAME.app/Contents/Resources/applet.icns"
